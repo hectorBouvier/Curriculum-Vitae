@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: sudo apt install texlive-latex-extra
+    - run: sudo apt install texlive-latex-extra texlive-fonts-extra
     - run: make
     - uses: actions/upload-artifact@v3
       with:
